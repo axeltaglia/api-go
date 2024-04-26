@@ -42,3 +42,38 @@ This project is a simple API server built in Go for managing products. It provid
 ### Usage
 
 Once the server is running, you can interact with the API using HTTP requests. Here are some sample requests:
+
+- Create product
+```bash
+POST /createProduct
+Content-Type: application/json
+
+{
+  "name": "Product Name",
+  "code": "ABC123"
+}
+```
+
+- Update product
+```bash
+PUT /updateProduct/{id}
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Updated Product Name",
+  "code": "XYZ456"
+}
+```
+
+
+- Get product
+```bash
+GET /getProduct/{id}
+```
+
+- Get products
+```bash
+GET /getProducts
+```
+
